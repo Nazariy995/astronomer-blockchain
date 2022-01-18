@@ -8,6 +8,7 @@ class BlockchainController {
         this.submitStar();
         this.getBlockByHash();
         this.getStarsByOwner();
+        //small changes
     }
 
     // Enpoint to Get a Block by Height (GET Endpoint)
@@ -108,7 +109,6 @@ class BlockchainController {
             
         });
     }
-
 }
 
 module.exports = (app, blockchainObj) => { return new BlockchainController(app, blockchainObj);}
